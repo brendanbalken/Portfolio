@@ -1,0 +1,1 @@
+REM ~~~ This script will prepare you to run LCMODEL ~~~

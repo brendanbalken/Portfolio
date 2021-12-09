@@ -1,0 +1,20 @@
+PS3='Please choose an ROI: '
+        options=("ACx" "PVCx")
+        select opt in "${options[@]}"
+        do
+                case $opt in
+                        "ACx")
+                                echo "You chose ACx..."
+                                mask_name="ACx.nii.gz"
+                                break
+                                ;;
+
+                        "PVCx")
+                                echo "You chose PVCx..."
+                                mask_name="PVCx.nii.gz"
+                                break
+                                ;;
+
+                *) echo "invalid option $REPLY";;
+        esac
+done
